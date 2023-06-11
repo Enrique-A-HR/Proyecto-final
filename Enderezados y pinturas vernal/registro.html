@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pagina Principal</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+</style>
+</head>
+<body style="zoom: 90%;">
+ <header>
+       <center><img src="paint.png" width="100%"></center>
+     <nav>
+       <ul>
+         <li><a href="index.html">Inicio</a></li>
+         <li><a href="multimedia.html">Areas de la empresa</a></li>
+         <li><a href="#">Contacto</a></li>
+         <li><a href="reservas.html">Pedidos</a></li>
+         <li><a href="registro.html">Registro</a></li>
+       </ul>
+     </nav>
+   </header>
+   <br><br>
+   <center><div id="cuerpo">
+    <h1>Registro de cliente</h1>
+    <br><br>
+    <p>Llena este pequeño formulario para registrar tus datos en el sitio web de Enderezados y Pinturas Bernal, Asi si solicitas un servicio o producto tendremos tus datos para enviarte el pedido o para tener una mayor prioridad en los servicios.</p>
+   </div></center>
+   <br><br>
+   <center><table border="1">
+     <form name="contact" method="POST" netlify>
+       <th colspan="2">Datos de usuario</th>
+       <tr><td>Nombres:</td><td><input type="text" class="datos" placeholder="Ingrese sus nombres" required name="nombre"></td></tr>
+       <tr><td>Apellidos:</td><td><input type="text" class="datos" placeholder="Ingrese sus apellidos" required name="Apellido"></td></tr>
+        <tr><td>E-Mail:</td><td><input type="text" class="datos" placeholder="Ingrese su correo" required name="mail"></td></tr>
+       <tr><td>Numero Telefonico:</td><td><input type="tel" class="datos" placeholder="Ingrese su Numero" name="telephone" pattern="[0-9]|.{8}" title="Ingresa un numero de telefono valido! Debes ingresar un numero de 8 Digitos!"  required></td></tr>
+       <tr><td>Departamento de residencia:</td> <td class="seleccion"><select name="Departamento de residencia" id="lang" required>
+    <option value="">Seleccione un valor</option>    
+        <option value="Santa Ana">Santa Ana</option>
+        <option value="Ahuachapán">Ahuachapán</option>
+        <option value="Sonsonate">Sonsonate</option>
+        <option value="San Salvador">San Salvador</option>
+        <option value="La Libertad">La Libertad</option>
+        <option value="Chalatenango">Chalatenango</option>
+        <option value="La Paz">La Paz</option>
+        <option value="Cuscatlán">Cuscatlán</option>
+        <option value="Cabañas">Cabañas</option>
+        <option value="San Vicente">San Vicente</option>
+        <option value="San Miguel">San Miguel</option>
+        <option value="La Unión">La Unión</option>
+        <option value="Morazán">Morazán</option>
+        <option value="Usulután">Usulután</option>
+      </select><br><br></td></tr>
+       <tr><td>Direccion de Residencia</td><td><textarea cols="30" rows="3" placeholder="Ingrese su Direccion " required></textarea></td></tr>
+       <tr><td>Servicio Requerido:</td><td><select name="Servicio" id="lang" required>
+        <option value="">Seleccione un servicio</option>
+        <option value="1">Ninguno</option>
+        <option value="2">Pintura general de vehículo</option>
+        <option value="3">Reparacion de vehículo</option>
+        <option value="4">Restauracion de pintura</option>
+       </select></td></tr>
+
+       <tr><td class="botones1"><input type="submit" class="boton"></td><td class="botones2"><input type="reset" class="boton"></td></tr>
+     </form>
+   </table></center>
